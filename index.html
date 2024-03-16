@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to Boxicons CSS file -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link to custom CSS file -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>QR Code Generator Using HTML, CSS and JavaScript</title>
+</head>
+<body>
+    <div class="hero">
+        <!-- Navigation section -->
+        <nav>
+            <!-- Logo -->
+            <img class="logo" src="assets/img/logo.png" alt="">
+            
+            <!-- Navigation links -->
+            <ul class="nav__links">
+                <li class="nav__item">
+                   <a href="#">Home</a>
+                </li>
+
+                <li class="nav__item">
+                   <a href="#">About Us</a>
+                </li>
+
+                <li class="nav__item">
+                   <a href="#">Services</a>
+                </li>
+
+                <li class="nav__item">
+                   <a href="#">Contact Me</a>
+                </li>
+             </ul>
+
+             <a href="#" class="cta"><button>Try For Free</button></a>
+        </nav>
+
+        <!-- Main content section -->
+        <div class="info">
+            
+            <!-- Main headline -->
+            <h1>Generate QR<br><span>Codes </span>Instantly.</h1>
+
+            <!-- Sub headline -->
+            <p>Easily generate QR codes. Enter your content, hit generate,<br> download it, and simplify your QR code creation process instantly!</p>
+
+            <!-- Button to generate QR code -->
+            <a href="#"><button class="free">Generate Now</button></a>
+
+        </div>
+
+        <!-- QR code generation section -->
+        <div class="container">
+            <!-- Text input for entering content -->
+            <p>Enter your Text or URL</p>
+            <input type="text" placeholder="Text or URL" id="qrtext">
+            <!-- Display box for generated QR code -->
+            <div id="displaybox">
+                <img src="" id="qrimage">
+                <!-- Button to download QR code -->
+                <a id="downloadButton" class="download-link" href="#" download="QR_Code.png">
+                    <i class='bx bxs-download'></i> Download QR Code
+                </a>
+            </div>
+            <!-- Button to trigger QR code generation -->
+            <button onclick="GenerateQR()">Generate QR Code</button>
+        </div>
+
+        <!-- Social media links section -->
+        <div class="social-links">
+            <i class='bx bxl-linkedin-square' ></i>
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram' ></i>
+            <i class='bx bxl-twitter' ></i>
+        </div>
+    </div>
+
+    <!-- JavaScript file for QR code generation -->
+    <script src="assets/js/script.js"> </script>
+</body>
+</html>
