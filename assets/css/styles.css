@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans"; /* Setting default font */
+}
+
+/* Hero section styles */
+.hero {
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    background: #272727; /* Dark background color */
+    font-family: "DM Sans"; /* Setting font for hero section */
+    position: relative;
+}
+
+/* Navigation styles */
+nav {
+    width: 84%; /* Adjust the width of the navigation */
+    margin: auto; 
+    padding: 20px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 12%; /* Logo width */
+    cursor: pointer;
+}
+
+.nav__item {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.nav__item a {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+nav ul li a:hover {
+    color: #f6a227; /* Color change on hover */
+    font-weight: 600;
+}
+
+/* Info section styles */
+.info {
+    margin-left: 8%; /* Adjust margin as needed */
+    margin-top: 12%; /* Adjust margin as needed */
+}
+
+.info h1 {
+    font-size: 90px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    line-height: 1;
+}
+
+.info span {
+    color: #f6a227; /* Accent color */
+}
+
+.info p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Button styles */
+button {
+    font-size: 18px;
+    color: white;
+    display: inline-block;
+    padding: 9px 25px;
+    background-color: #c57600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(246, 163, 39); /* Color change on hover */
+}
+
+/* Social links styles */
+.social-links {
+    margin-left: 8%; /* Adjust margin as needed */
+    margin-top: 100px; /* Adjust margin as needed */
+}
+
+.social-links i {
+    font-size: 30px;
+    color: #ffffff;
+    margin-right: 10px;
+    transition: all 0.3s ease 0s;
+}
+
+.social-links i:hover {
+    color: #f6a227; /* Color change on hover */
+}
+
+/* QR code container styles */
+.container {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 15%; /* Adjust distance from the right side */
+    transform: translateY(-50%);
+    padding: 25px 35px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+}
+
+.container p {
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container input {
+    font-size: 15px;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #272727;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 20px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.container button {
+    width: 100%;
+    height: 50px;
+    background: #272727;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.container button:hover {
+    background: #f6a227; /* Color change on hover */
+}
+
+/* Display box for generated QR code styles */
+#displaybox {
+    width: 250px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#displaybox img {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#displaybox.show-img {
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #272727;
+}
+
+/* Error message styles */
+.error {
+    animation: shake 0.1s linear 10; /* Shake animation */
+    color: red;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Style for the download link */
+.download-link {
+    font-size: 18px;
+    display: block;
+    margin-top: 10px; /* Adjust margin as needed */
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.download-link:hover {
+    text-decoration: underline; /* Underline on hover */
+    font-weight: 500;
+    color: #f6a227; /* Color change on hover */
+    transition: all 0.3s ease 0s;
+}
+
+/* Style for the download button icon */
+.download-link i {
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
