@@ -6,7 +6,7 @@ This project is a simple QR code generator implemented using HTML, CSS, and Java
 ## Features
 - Generate QR codes from text or URLs.
 - Download generated QR codes.
-- Responsive design for various screen sizes.
+- Beautiful Landing Page design.
 
 ## Support
 For support or inquiries, please contact me via:
